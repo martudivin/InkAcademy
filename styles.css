@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.695),rgba(0, 0, 0, 0.699)),url(images/hero2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+header .logo {
+    margin: 0;
+    padding: 20px 25px;
+    font-size: 1.45em;
+    font-weight: 700;
+    background: linear-gradient(90deg, #535ad4, #FFFDFC);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a {
+    font-size: 1.2em;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 450;
+}
+
+.navbar ul li a:hover {
+    color: #535ad4;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-container label i {
+    font-size: 0.6em;
+    color: #FFFDFC;
+}
+
+.menu-container label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #FFFDFC;
+    margin-bottom: 30px;
+    color: #8f92cf;
+}
+
+.header-content p {
+    font-size: 17px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+button {
+    display: inline-block;
+    padding: 9px 27px;
+    background-color: #535ad4;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0.5px solid rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+}
+
+button a {
+    font-size: 20px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #3339aa;
+}
+
+.tattoo-content {
+    background-color: #FFFDFC;
+    /* background-size: cover; */
+    /* min-height: 25px; */
+    display: block;
+    text-align: center;
+    padding: 45px;
+    padding-bottom: 30px;
+    font-size: 1.45em;
+}
+
+.tattoo-content h2 {
+    color: #3339aa;
+}
+
+.tattoo-content p {
+    padding: 20px;
+    color: #323337;
+}
+
+#cursos-group {
+    background-color: rgb(30, 30, 30, 30);
+    color: #FFFDFC;
+    text-align: center;
+}
+
+#cursos-group .container {
+    padding: 25px 0px;
+}
+
+#cursos-group p {
+    display: none;
+}
+
+#cursos-group h2{
+    margin: 15px;
+    font-size: 1.5em;
+}
+
+#cursos-group .curso-card {
+    padding: 100px 0;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#cursos-group .curso-card:hover{
+    box-shadow: #18191a 0 15px 25px;
+}
+
+.curso-card:first-child {
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/curso-inicial.jpg);
+}
+
+.curso-card:nth-child(2) {
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/curso-puntillismo.jpg);
+}
+
+.curso-card:nth-child(3) {
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/curso-realismo2.jpg);
+}
+
+#nuestra-academia {
+    background-color: #FFFDFC;
+    text-align: left;
+    padding: 25px;
+    padding-bottom: 30px;
+    font-size: 1.45em;
+    max-height: max-content;
+}
+
+.info-1{
+    margin-bottom: 50px;
+    text-align: justify;
+    display: block;
+}
+
+.info-1 h3 {
+    text-align: center;
+    margin: 25px 0;
+    color:#3339aa;
+}
+
+.info-2 {
+    display: block;
+    align-items: flex-start;
+    text-align: left;
+    background-color:#535ad4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.info-2 .beneficios {
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.info-2 .beneficios li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+header .menu-container{
+    position: fixed;
+}
+
+footer {
+    background-color: #323337;
+    height: max-content;
+}
+
+footer p{
+    color: #606060;
+}
+
+footer h3 {
+    padding: 10px;
+    color: #606060;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: #606060;
+}
+
+footer a {
+    padding: 3px;
+    color: #606060;
+}
+
+a:hover {
+    color: #504a4a;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+footer .contacto {
+    padding: 30px;
+    text-align: center;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+
+@media (min-width:720px) {
+
+    .logo {
+        font-size: 1.80em;
+    }
+
+    #nuestra-academia .container-info{
+        display: flex;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nuestra-academia .info-1{
+        width: 50%;
+        text-align: initial;
+        padding: 0 30px;
+    }
+
+    #nuestra-academia .info-1 h3{
+        text-align: initial;
+    }
+
+    #nuestra-academia .image-container{
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/academia2.jpg);
+        width: 350px;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        box-shadow: #323337 30px;
+    }
+
+    footer {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content:space-evenly flex-start;
+        font-size: large;
+    }
+}
+
