@@ -335,12 +335,37 @@ footer .copyright {
 
 @media screen and (max-width: 720px) {
     
-    .abrir-menu {
+    .abrir-menu,.cerrar-menu {
         display: block;
     }
 
-    .navbar ul{
-        display: none;
+    .navbar {
+        opacity: 0;
+        visibility: hidden;
     }
 
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color:#000000;
+        padding: 2rem;
+        bottom: 0;
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, .5);
+    }
+
+    .nav-list{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a{
+        color: #C5C5C5;
+    }
 }
