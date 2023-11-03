@@ -359,7 +359,6 @@ footer .copyright {
     }
 
     .nav-list{
-        display: none;
         display: flex;
         flex-direction: column;
         align-items: end;
