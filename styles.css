@@ -358,6 +358,11 @@ footer .copyright {
         box-shadow: 0 0 0 100vh rgba(0, 0, 0, .5);
     }
 
+    .nav-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
     .nav-list{
         display: flex;
         flex-direction: column;
