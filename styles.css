@@ -50,8 +50,7 @@ header .logo {
     -webkit-background-clip: text;
 }
 
-.abrir-menu, 
-.cerrar-menu{
+.cerrar-menu,.abrir-menu{
     display: none;
 }
 
@@ -359,7 +358,7 @@ footer .copyright {
         box-shadow: 0 0 0 100vh rgba(0, 0, 0, .5);
     }
 
-    .navbar-visible {
+    header nav.visible {
         opacity: 1;
         visibility: visible;
     }
